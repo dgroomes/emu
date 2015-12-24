@@ -1,0 +1,12 @@
+- make Spring Boot back end
+- use docker?
+- do something with service worker
+- CSS Modules?
+- front end dev server should proxy "api" requests; redirect to back end (depends on: make the back end)
+- do i really need a vendor.js? rather just put it in app.js
+- seriously polish that webpack.config.js... how does it even work?
+
+Done
+- make solution to not put build artifacts alongside source. I.e., don't put compiled Javascript next to the source Typescript. src != target
+- Webpack? (I probably want to use a higher lever build system than just the "scripts" property of package.json and my own ad hoc scripts
+- webpack-dev-server? is this viable as a front end dev server? can I configure it to route certain requests to my java backend? (my interest for some of these todo's is coming from https://github.com/Mercateo/component-check btw)
