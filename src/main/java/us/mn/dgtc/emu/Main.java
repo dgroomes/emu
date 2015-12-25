@@ -11,6 +11,4 @@ public class Main {
         SpringApplication.run(Main.class);
     }
 
-    @Bean
-    public String whoami() { return "dj snake"; }
 }
