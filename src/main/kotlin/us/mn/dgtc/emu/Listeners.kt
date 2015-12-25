@@ -10,10 +10,11 @@ import org.springframework.stereotype.Component;
  * Event listeners
  */
 @Component
-class Listeners @Autowired constructor(@Value("\${host.url}") val hostUrl: String, @Value("\${startup.endpoints}") val startupEndpoints: Array<String>) {
+class Listeners @Autowired constructor(@Value("\${host.url}") val hostUrl: String,
+                                       @Value("\${startup.endpoints}") val startupEndpoints: Array<String>) {
 
     @EventListener(ContextRefreshedEvent::class)
-    fun contextRefreshedEvent() = startupEndpoints.forEach {
+    fun listUsefulStartupEndpoints() = startupEndpoints.forEach {
         println("check out: ${hostUrl + it}")
     }
 }

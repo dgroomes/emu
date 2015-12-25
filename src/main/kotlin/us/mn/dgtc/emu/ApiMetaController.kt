@@ -4,7 +4,8 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 /**
- * Created by David Groomes on 12/25/2015.
+ * Get information about this application's API
+ * TODO implement something useful; so far this is only a demo
  */
 @RestController
 @RequestMapping("api")
@@ -12,5 +13,4 @@ class ApiMetaController {
 
     @RequestMapping("meta")
     fun getApiMetaData() : String = "fake API metadata"
-
 }
