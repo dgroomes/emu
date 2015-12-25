@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/angular2QuickStart.iml" filepath="$PROJECT_DIR$/angular2QuickStart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/angular2experiment.iml" filepath="$PROJECT_DIR$/angular2experiment.iml" />
     </modules>
   </component>
 </project>
