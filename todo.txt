@@ -1,9 +1,9 @@
-- make Spring Boot back end
 - use docker?
 - do something with service worker
 - CSS Modules?
 - front end dev server should proxy "api" requests; redirect to back end (depends on: make the back end)
 - umm, app.js is > 13MB in size... how that? investigate
+- Swagger documentation
 
 Done
 - make solution to not put build artifacts alongside source. I.e., don't put compiled Javascript next to the source Typescript. src != target
@@ -11,3 +11,4 @@ Done
 - webpack-dev-server? is this viable as a front end dev server? can I configure it to route certain requests to my java backend? (my interest for some of these todo's is coming from https://github.com/Mercateo/component-check btw)
 - seriously polish that webpack.config.js... how does it even work?
 - do i really need a vendor.js? rather just put it in app.js
+- make Spring Boot back end
