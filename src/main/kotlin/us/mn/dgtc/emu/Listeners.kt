@@ -7,11 +7,10 @@ import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
 /**
- * Event listeners
+ * Event listeners. For fun.
  */
 @Component
-class Listeners @Autowired constructor(@Value("\${host.url}") val hostUrl: String,
-                                       @Value("\${startup.endpoints}") val startupEndpoints: Array<String>) {
+class Listeners @Autowired constructor(@Value("\${host.url}") val hostUrl: String, @Value("\${startup.endpoints}") val startupEndpoints: Array<String>) {
 
     @EventListener(ContextRefreshedEvent::class)
     fun listUsefulStartupEndpoints() = startupEndpoints.forEach {
