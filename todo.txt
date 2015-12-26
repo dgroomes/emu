@@ -3,7 +3,7 @@
 - CSS Modules?
 - front end dev server should proxy "api" requests; redirect to back end (depends on: make the back end)
 - umm, app.js is > 13MB in size... how that? investigate
-- Swagger documentation
+- hook into logging
 
 Done
 - make solution to not put build artifacts alongside source. I.e., don't put compiled Javascript next to the source Typescript. src != target
@@ -12,3 +12,6 @@ Done
 - seriously polish that webpack.config.js... how does it even work?
 - do i really need a vendor.js? rather just put it in app.js
 - make Spring Boot back end
+- gradle build front end (sort of not really at all though; it copies the dist directory to the build's resources)
+- backend serves front end files
+- Swagger documentation

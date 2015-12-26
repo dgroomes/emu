@@ -1,7 +1,6 @@
 package us.mn.dgtc.emu
 
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 /**
  * Get information about this application's API
@@ -11,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping("api")
 class ApiMetaController {
 
-    @RequestMapping("meta")
+    @RequestMapping(value = "meta", method = arrayOf(RequestMethod.GET))
+    @ResponseBody
     fun getApiMetaData() : String = "fake API metadata"
 }

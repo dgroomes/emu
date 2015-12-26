@@ -30,6 +30,13 @@ jar {
     version = '0.0.0'
 }
 
+task copyFrontEndDist(type: Copy) {
+    from 'dist'
+    into 'build/resources/main/static'
+}
+
+build.dependsOn(copyFrontEndDist)
+
 repositories {
     mavenCentral()
     maven { url 'http://repo.spring.io/release'}
