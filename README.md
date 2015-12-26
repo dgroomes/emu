@@ -1,4 +1,4 @@
-# angular2experiment
+# project emu
 
 Learning Angular 2, RxJS, Webpack, TypeScript. Starting with the angular.io quickstart.
 
