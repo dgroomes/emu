@@ -1,7 +1,8 @@
-import {Component} from 'angular2/core';
-import {Http, HTTP_PROVIDERS} from 'angular2/http';
-import {NgFor} from 'angular2/common';
-import {Observable} from "rxjs/Observable";
+import {Component} from 'angular2/core'
+import {Http, HTTP_PROVIDERS} from 'angular2/http'
+import {NgFor} from 'angular2/common'
+import {Observable} from "rxjs/Observable"
+import {JokeService} from "./jokes.service"
 
 @Component({
     selector: 'my-app',
@@ -18,8 +19,8 @@ export class MyAppComponent {
 
     jokes:Array<String>;
 
-    constructor(http:Http) {
-        http.get('http://api.icndb.com/jokes/random/3')
+    constructor(jokesService : JokeService) {
+        jokesService.getOne()
             .subscribe(res => this.jokes = res.json().value)
     }
 }

@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.*
  * TODO implement something useful; so far this is only a demo
  */
 @RestController
-@RequestMapping("api")
+@RequestMapping("api/meta")
 class ApiMetaController {
 
-    @RequestMapping(value = "meta", method = arrayOf(RequestMethod.GET))
+    @RequestMapping(method = arrayOf(RequestMethod.GET))
     @ResponseBody
     fun getApiMetaData() : String = "fake API metadata"
 }
