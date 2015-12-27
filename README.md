@@ -1,5 +1,5 @@
 # project emu
+#### a pretty fatty stack
+Angular 2, RxJS, Webpack, TypeScript, RxJava, Nashorn, Spring Boot, Spring Security, Spock, Gradle. Starting with the angular.io quickstart.
 
-Learning Angular 2, RxJS, Webpack, TypeScript. Starting with the angular.io quickstart.
-
-Backed by Spring Boot; Kotlin; Java 8
+Backed by Spring; Kotlin; Java 8
