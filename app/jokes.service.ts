@@ -8,6 +8,6 @@ export class JokeService {
     constructor(private http: Http) {}
 
     getOne() : Observable<Response> {
-        return this.http.get('http://localhost:8080/api/jokes')
+        return this.http.get('/api/jokes')
     }
 }

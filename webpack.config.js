@@ -22,6 +22,11 @@ module.exports = {
     },
     devServer: {
         contentBase: './',
-        publicPath: '/dist'
+        publicPath: '/dist',
+        proxy: {
+            '/api/*': {
+                target: 'http://localhost:8080'
+            }
+        }
     }
 };

@@ -1,9 +1,10 @@
 - use docker?
 - do something with service worker
 - CSS Modules?
-- front end dev server should proxy "api" requests; redirect to back end (depends on: make the back end)
 - umm, app.js is > 13MB in size... how that? investigate
 - hook into logging
+- secure api requests
+- html5 mode routing
 
 Done
 - make solution to not put build artifacts alongside source. I.e., don't put compiled Javascript next to the source Typescript. src != target
@@ -15,3 +16,4 @@ Done
 - gradle build front end (sort of not really at all though; it copies the dist directory to the build's resources)
 - backend serves front end files
 - Swagger documentation
+- front end dev server should proxy "api" requests; redirect to back end (depends on: make the back end)
