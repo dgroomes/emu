@@ -1,11 +1,11 @@
 import {Component} from 'angular2/core'
 import {Http, HTTP_PROVIDERS} from 'angular2/http'
 import {NgFor} from 'angular2/common'
-import {Observable} from "rxjs/Observable"
-import {JokeService} from "./jokes.service"
+import {Observable} from 'rxjs/Observable'
+import {JokeService} from '../services/jokes.service'
 
 @Component({
-    selector: 'my-app',
+    selector: 'my-jokes',
     directives: [NgFor],
     template: `
         <h2>hello there. here some jokes</h2>
@@ -13,9 +13,9 @@ import {JokeService} from "./jokes.service"
             {{joke.joke}}
         </div>
     `,
-    viewProviders: [HTTP_PROVIDERS]
+    providers: [JokeService]
 })
-export class MyAppComponent {
+export class JokesComponent {
 
     jokes:Array<String>;
 

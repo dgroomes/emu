@@ -9,8 +9,8 @@ import 'reflect-metadata'
 /***********************************************HACKY WEIRD -- END*****************************************************/
 
 import {bootstrap} from 'angular2/platform/browser'
-import {MyAppComponent} from './app.component'
-import {JokeService} from './jokes.service'
+import {AppComponent} from './components/app.component'
 import {HTTP_PROVIDERS} from 'angular2/http'
+import {ROUTER_PROVIDERS} from 'angular2/router'
 
-bootstrap(MyAppComponent, [JokeService, HTTP_PROVIDERS]);
+bootstrap(AppComponent, [HTTP_PROVIDERS, ROUTER_PROVIDERS]);

@@ -18,7 +18,7 @@
     "ts-loader": "^0.7.2"
   },
   "scripts": {
-    "start": "webpack-dev-server --inline --port 3000",
+    "start": "webpack-dev-server --inline --port 3456",
     "build": "webpack"
   }
 }

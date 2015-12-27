@@ -3,7 +3,6 @@
 - CSS Modules?
 - umm, app.js is > 13MB in size... how that? investigate
 - hook into logging
-- secure api requests
 - html5 mode routing
 
 Done
@@ -17,3 +16,4 @@ Done
 - backend serves front end files
 - Swagger documentation
 - front end dev server should proxy "api" requests; redirect to back end (depends on: make the back end)
+- secure api requests
