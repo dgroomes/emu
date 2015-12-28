@@ -1,4 +1,4 @@
--Nashorn, route definition file that can be ready by both front end and back end
+-Nashorn, route definition file that can be read by both front end and back end
 
 Abandoned / "Ice locker" or whatever
 - CSS Modules?
