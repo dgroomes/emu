@@ -1,7 +1,8 @@
 import {Component} from 'angular2/core'
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router'
 import {JokesComponent} from '../components/jokes.component'
-import {AboutComponent} from '../components/about.component';
+import {AboutComponent} from '../components/about.component'
+import routes from './routes'
 
 @Component({
     selector: 'my-app',
@@ -15,7 +16,7 @@ import {AboutComponent} from '../components/about.component';
     directives: [ROUTER_DIRECTIVES]
 })
 @RouteConfig([
-    {name: 'About', path: '/about', component: AboutComponent, useAsDefault: true},
-    {name: 'Jokes', path: '/jokes', component: JokesComponent}
+    {name: 'About', path: routes.about, component: AboutComponent, useAsDefault: true},
+    {name: 'Jokes', path: routes.jokes, component: JokesComponent}
 ])
 export class AppComponent {}
