@@ -1,9 +1,11 @@
-- use docker?
-- do something with service worker
+-Nashorn, route definition file that can be ready by both front end and back end
+
+Abandoned / "Ice locker" or whatever
 - CSS Modules?
+- use docker?
 - umm, app.js is > 13MB in size... how that? investigate
 - hook into logging
-- html5 mode routing
+- do something with service worker
 
 Done
 - make solution to not put build artifacts alongside source. I.e., don't put compiled Javascript next to the source Typescript. src != target
@@ -17,3 +19,4 @@ Done
 - Swagger documentation
 - front end dev server should proxy "api" requests; redirect to back end (depends on: make the back end)
 - secure api requests
+- html5 mode routing; make sure requests to /jokes /about etc. are forwarded index.html

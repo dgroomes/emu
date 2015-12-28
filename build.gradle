@@ -32,10 +32,16 @@ jar {
 
 task copyFrontEndDist(type: Copy) {
     from 'dist'
+    into 'build/resources/main/static/dist'
+}
+
+task copyFrontEndIndexHtml(type: Copy) {
+    from 'index.html'
     into 'build/resources/main/static'
 }
 
 build.dependsOn(copyFrontEndDist)
+build.dependsOn(copyFrontEndIndexHtml)
 
 repositories {
     mavenCentral()
