@@ -10,4 +10,8 @@ export class JokeService {
     getOne() : Observable<Response> {
         return this.http.get('/api/jokes')
     }
+
+    getSomeJokes() : Observable<Response> {
+        return this.http.get('/api/jokes')
+    }
 }

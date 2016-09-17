@@ -3,10 +3,13 @@
 var webpack = require('webpack');
 
 module.exports = {
-    entry: './app/bootstrap.ts',
+    entry: {
+        app: './app/bootstrap.ts',
+        testt: './frontendtest/testt.ts'
+    },
     output: {
         path: './dist',
-        filename: 'app.js'
+        filename: '[name].js'
     },
     devtool: 'inline-source-map',
     module: {

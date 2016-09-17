@@ -17,10 +17,19 @@ import {JokeService} from '../services/jokes.service'
 })
 export class JokesComponent {
 
-    jokes:Array<String>;
+    jokes:Array<String> = [];
 
-    constructor(jokesService : JokeService) {
-        jokesService.getOne()
-            .subscribe(res => this.jokes = res.json().value)
+    jokeService : JokeService;
+
+    constructor(jokeService : JokeService) {
+        this.jokeService = jokeService;
+        this.jokeService.getOne()
+            .subscribe(res => this.jokes += res.json().value)
     }
+
+    getMoreJokes() {
+        this.jokeService.getSomeJokes().subscribe(res => this.jokes += res.json().value)
+    }
+
+
 }

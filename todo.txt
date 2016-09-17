@@ -1,4 +1,11 @@
--Nashorn, route definition file that can be read by both front end and back end
+- pull more jokes button
+- throttle jokes production on back end
+- reactive joke pulling from front end; use "subscribe"
+- front end tests
+- upgrade to Angular 2 final
+- upgrade to latest kotlin
+- upgrade to latest spring
+- use JUnit 5
 
 Abandoned / "Ice locker" or whatever
 - CSS Modules?
@@ -6,6 +13,7 @@ Abandoned / "Ice locker" or whatever
 - umm, app.js is > 13MB in size... how that? investigate
 - hook into logging
 - do something with service worker
+- Nashorn, route definition file that can be read by both front end and back end
 
 Done
 - make solution to not put build artifacts alongside source. I.e., don't put compiled Javascript next to the source Typescript. src != target
