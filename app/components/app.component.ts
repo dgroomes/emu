@@ -1,22 +1,13 @@
-import {Component} from 'angular2/core'
-import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router'
-import {JokesComponent} from '../components/jokes.component'
-import {AboutComponent} from '../components/about.component'
-import routes from './routes'
+import {Component} from '@angular/core'
 
 @Component({
     selector: 'my-app',
     template: `
         <h1>Emu Fatty Stack</h1>
         <h3>github/dgroomes</h3>
-        <a [routerLink]="['About']">About</a>
-        <a [routerLink]="['Jokes']">Jokes</a>
+        <a routerLink="/about">About</a>
+        <a routerLink="/jokes">Jokes</a>
         <router-outlet></router-outlet>
-    `,
-    directives: [ROUTER_DIRECTIVES]
+    `
 })
-@RouteConfig([
-    {name: 'About', path: routes.about, component: AboutComponent, useAsDefault: true},
-    {name: 'Jokes', path: routes.jokes, component: JokesComponent}
-])
 export class AppComponent {}

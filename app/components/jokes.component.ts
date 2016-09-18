@@ -1,15 +1,12 @@
-import {Component} from 'angular2/core'
-import {Http, HTTP_PROVIDERS} from 'angular2/http'
-import {NgFor} from 'angular2/common'
-import {Observable} from 'rxjs/Observable'
+import {Component} from '@angular/core'
 import {JokeService} from '../services/jokes.service'
+import {Joke} from "../domain/joke";
 
 @Component({
     selector: 'my-jokes',
-    directives: [NgFor],
     template: `
-        <h2>hello there. here some jokes</h2>
-        <div *ngFor="#joke of jokes">
+        <h2>hello there. here some jokes</h2>      
+        <div *ngFor="let joke of jokes">
             {{joke.joke}}
         </div>
     `,
@@ -17,18 +14,17 @@ import {JokeService} from '../services/jokes.service'
 })
 export class JokesComponent {
 
-    jokes:Array<String> = [];
+    jokes:Array<Joke> = [];
 
-    jokeService : JokeService;
+    private jokeService : JokeService;
 
     constructor(jokeService : JokeService) {
         this.jokeService = jokeService;
-        this.jokeService.getOne()
-            .subscribe(res => this.jokes += res.json().value)
+        this.getJokes()
     }
 
-    getMoreJokes() {
-        this.jokeService.getSomeJokes().subscribe(res => this.jokes += res.json().value)
+    getJokes() {
+        this.jokeService.getSomeJokes().subscribe(jokes => jokes.forEach(joke => this.jokes.push(joke)))
     }
 
 

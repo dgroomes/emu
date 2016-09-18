@@ -6,6 +6,8 @@
 - upgrade to latest kotlin
 - upgrade to latest spring
 - use JUnit 5
+- use gradle 3
+- use kotlin-script-gradle
 
 Abandoned / "Ice locker" or whatever
 - CSS Modules?

@@ -4,8 +4,9 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: {
-        app: './app/bootstrap.ts',
-        testt: './frontendtest/testt.ts'
+        app: './app/main.ts'
+        // ,
+        // testt: './frontendtest/testt.ts'
     },
     output: {
         path: './dist',

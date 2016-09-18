@@ -4,13 +4,11 @@
  * this TypeScript file using zone.js or reflect-metadata, so why import it? Is it an unused import?" Anyway, these
  * libraries are required for Angular 2. Also sort of a hack, right?
  **********************************************************************************************************************/
-import 'zone.js/lib/browser/zone-microtask'
+import 'zone.js'
 import 'reflect-metadata'
-/***********************************************HACKY WEIRD -- END*****************************************************/
+import 'rxjs/Rx'
 
-import {bootstrap} from 'angular2/platform/browser'
-import {AppComponent} from './components/app.component'
-import {HTTP_PROVIDERS} from 'angular2/http'
-import {ROUTER_PROVIDERS} from 'angular2/router'
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app.module.ts';
 
-bootstrap(AppComponent, [HTTP_PROVIDERS, ROUTER_PROVIDERS]);
+platformBrowserDynamic().bootstrapModule(AppModule);

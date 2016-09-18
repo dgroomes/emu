@@ -11,8 +11,8 @@ import org.springframework.stereotype.Component;
  * Event listeners. For fun.
  */
 @Component
-class Listeners @Autowired constructor(@Value("\${host.url}") val hostUrl: String,
-                                       @Value("\${startup.endpoints}") val startupEndpoints: Array<String>) {
+open class Listeners @Autowired constructor(@Value("\${host.url}") val hostUrl: String,
+                                            @Value("\${startup.endpoints}") val startupEndpoints: Array<String>) {
 
     @EventListener(ApplicationReadyEvent::class)
     fun listUsefulStartupEndpoints() = startupEndpoints.forEach {
