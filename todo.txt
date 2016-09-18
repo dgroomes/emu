@@ -2,10 +2,10 @@
 - throttle jokes production on back end
 - reactive joke pulling from front end; use "subscribe"
 - front end tests
-- upgrade to Angular 2 final
 - upgrade to latest kotlin
 - upgrade to latest spring
 - use JUnit 5
+- use Spring 5, which has reactive programming
 - use gradle 3
 - use kotlin-script-gradle
 
@@ -18,6 +18,7 @@ Abandoned / "Ice locker" or whatever
 - Nashorn, route definition file that can be read by both front end and back end
 
 Done
+- upgrade to Angular 2 final
 - make solution to not put build artifacts alongside source. I.e., don't put compiled Javascript next to the source Typescript. src != target
 - Webpack? (I probably want to use a higher lever build system than just the "scripts" property of package.json and my own ad hoc scripts
 - webpack-dev-server? is this viable as a front end dev server? can I configure it to route certain requests to my java backend? (my interest for some of these todo's is coming from https://github.com/Mercateo/component-check btw)
